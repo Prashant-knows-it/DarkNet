@@ -87,7 +87,7 @@ func handleClient(conn net.Conn) {
 		conn.Write([]byte{0x05, 0x00, 0x00, 0x01, 0, 0, 0, 0, 0, 0})
 
 		if string(domainBuf) == "mysite.shadow" {
-			node1Conn, err := net.Dial("tcp", "127.0.0.1:9001")
+			node1Conn, err := net.Dial("tcp", "fcufk-27-61-117-202.run.pinggy-free.link:36063")
 			if err != nil {
 				fmt.Println("[-] Node 1 offline")
 				return
